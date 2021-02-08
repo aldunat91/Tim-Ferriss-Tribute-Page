@@ -1,0 +1,471 @@
+/*-----    OVERALL    -------- */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-----    NAVIGATION    -------- */
+
+nav {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    left: 60%;
+    top: 2.8vw; 
+    width: 36%;
+    z-index: 3;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav a {
+    font-size: 1.3em;
+    color: #6C8685;
+    padding: 1vw;
+    margin-right: 2vw;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    font-size: 1.4em;
+    color: #ee455e;
+}
+
+
+/*----    PAGE HEADING    -------*/
+
+.heading-container {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    margin: 2em 3vw;
+}
+
+#img-div{
+    width: 60%;
+}
+
+#image {
+    max-width: 100%;
+    display: block;
+}
+
+#img-caption {
+    display: none;
+}
+
+.cover-border{
+    border: 0.4em solid rgb(255, 196, 33);
+    position: absolute;
+    height: 70%;
+    width: 92%;
+    left: 7%;
+    top: 14%;
+}
+
+.header-div {
+    margin: auto;
+}
+
+#title {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 5vw;
+    line-height: 0.8em;
+    color: #294F50;
+}
+
+.title-light {
+    font-weight: 300;
+    font-size: 50%;
+}
+
+.title-bold {
+    font-weight: 700;
+}
+
+
+
+/*---- Sections -------*/
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+
+section p {
+    font-family: 'Quicksand', sans-serif;
+    text-indent: 1.5em;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-weight: 100;
+    text-align: justify;
+}
+
+figcaption a {
+    color:black;
+    transition: 0.3s ease;
+}
+
+figcaption a:hover {
+    font-size: 1.1em;
+    color: #cc2e45;
+}
+
+.text-box {
+    padding: 3em 2em;
+    border: 1px dashed rgb(138, 138, 138);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+figcaption {
+    color: rgb(0, 0, 0);
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+
+/*---- About -------*/
+section#about {
+    display: flex;
+    align-items: center;
+    margin: 6em 3vw 3em 3vw;
+    padding: 1.5em 0em 7em 0em;
+}
+ 
+#about-content{
+    width: 50%;
+    margin-right: 2em;
+}
+
+#about-image-container {
+    width: 50%;
+    position: relative;
+}
+
+#about-image {
+    display: block;
+    max-width: 100%;
+    width: 23em;
+    height: auto;
+    margin: auto;
+}
+
+#about-image-background {
+    height: 30em;
+    width: 35em;
+    background-color: #dce9e8;
+    z-index: -1;
+    position: absolute;
+    top: 35%;
+    right: 50%;
+}
+
+
+/*------- Books -------*/
+
+hr {
+    border-top: 0.3em solid rgb(255, 196, 33);
+    width: 60%;
+    margin: 0px auto;
+ }
+
+section#books {
+     padding-top: 3em;
+ }
+
+.books-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 3em 3vw;
+}
+
+section#books figure {
+    margin: 2em 0.5em;
+    padding: 1em 1em;
+    box-shadow: 0px 0px 0.4em rgb(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+section#books figure:hover {
+    transform: scale(1.05);
+}
+
+section#books img {
+    height: 15em;
+    width: auto;
+    
+}
+
+
+/*---- Quotes -------*/
+section#quotes {
+   display: flex;
+   flex-direction: row-reverse;
+   align-items:flex-start;
+   margin: 6em 3vw;
+   padding-bottom: 8em;
+}
+
+#quotes-images {
+    width: 40%;
+}
+
+#quotes-images img {
+    width: 21.9em;
+    max-width: 100%;
+    height: 31.25em;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    object-position: 70% 0%;
+}
+
+#quotes-content {
+    width: 60%;
+    position: relative;
+    top: 10em;
+    margin-left: 2em;
+}
+
+.quotes-background {
+    height: 31.25em;
+    width: 37.5em;
+    background-color: #dce9e8;;
+    z-index: -1;
+    position: absolute;
+    right: 50%;
+    top: -5em;
+}
+
+#img-div {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*---- Footer -------*/
+footer {
+    padding: 1em 1em;
+    background-color: #122020;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer a {
+    color: rgb(150, 199, 214);
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: rgb(33, 181, 240);
+    font-size: 1.1em;
+}
+
+
+@media (min-width: 1500px) {
+    body {
+        font-size: 1.1vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    #about-image-background {
+        width: 31.25em;
+    }
+
+    .quotes-background {
+        width: 30em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        position: sticky;
+        width: 100%;
+        justify-content: center;
+        padding: 1em;
+        background-color: rgba(255, 255, 255, 0.9);
+        margin: 0px;
+    }
+
+    .heading-container {
+        flex-direction: column-reverse;
+    }
+    #img-div{
+        width: 100%;
+    }
+    #image {
+        width: 100%;
+        height: 48vw;
+        object-fit: cover;
+    }
+
+    #title {
+        font-size: 8vw;
+        line-height: 1em;
+    }
+
+    .cover-border{
+        border: 0.3em solid rgb(255, 196, 33);
+        height: 95%;
+        width: 70%;
+        left: 15%;
+        top: 4%;
+    }
+
+
+    section#about {
+        flex-direction: column-reverse;
+        padding: 15vw 0px 0px 0px;
+        margin: 3vw 3vw 0vw 3vw;
+    }    
+
+    #about-image-container {
+        width: 100%;
+    }
+    
+    #about-content{
+        width: 80%;
+        margin: 2em 1em;
+        align-self: flex-end;
+    }
+
+    #about-image {
+        width: 50%;
+        height: 20.6em;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+
+    #about-image-background {
+        height: 25em;
+        width: 70%;
+        top: 50%;
+        left: 0%;
+    }
+
+    
+    section#books {
+        padding-top: 5em;
+    }
+
+    .books-container {
+        font-size: 0.8em;
+    }
+
+    section#books figcaption {
+        font-size: 1.2em;
+    }
+
+
+    section#quotes {
+        flex-direction: column-reverse;
+        margin: 10em 3vw 0vw 3vw;
+        padding-bottom: 4em;
+     }
+
+     #quotes-images {
+        width: 100%;
+    }
+
+    #quotes-images img {
+        width: 60%;
+        height: 18.75em;
+        margin-left: 10%;
+    }
+
+    #quotes-content {
+        width: 80%;
+        position: relative;
+        top: 0px;
+        margin: 2em 1em;
+    }
+
+    .quotes-background {
+        height: 31.25em;
+        width: 85%;
+        left: 30%;
+        top: -35%;
+    }
+}
+
+@media (max-width: 490px) {
+    nav a {
+        font-size: 1em;
+        margin-right: 3vw;
+    }
+    
+    nav a:hover {
+        font-size: 1.1em;
+    }
+
+    .heading-container {
+        margin: 1em 0px;
+    }
+
+    #title {
+        font-size: 12vw;
+        line-height: 1em;
+    }
+
+    #about-image {
+        width: 60%;
+        height: 15em;
+        object-fit: cover;
+        object-position: 50% 0%;
+    }
+
+    #about-image-background {
+        height: 25em;
+        width: 62%;
+        top: 30%;
+        left: -3%;
+    }
+
+    #about-content{
+        width: 100%;
+        align-self: center;
+    }
+
+    .books-container {
+        font-size: 0.7em;
+    }
+    section#books figcaption {
+        font-size: 1.3em;
+    }
+    
+    #quotes-content {
+        width: 100%;
+        align-self: center;
+    }
+
+    #quotes-images img {
+        margin: auto;
+    }
+
+    .quotes-background {
+        height: 30em;
+        width: 74%;
+        left: 29%;
+        top: -30%;
+    }
+}
