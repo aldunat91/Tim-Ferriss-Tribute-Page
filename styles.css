@@ -421,6 +421,10 @@ footer a:hover {
     .heading-container {
         margin: 1em 0px;
     }
+    
+    #image {
+        height: 57vw;
+    }
 
     #title {
         font-size: 12vw;
@@ -459,6 +463,7 @@ footer a:hover {
     }
 
     #quotes-images img {
+        width: 90%;
         margin: auto;
     }
 
