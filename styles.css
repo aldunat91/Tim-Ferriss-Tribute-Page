@@ -280,6 +280,14 @@ footer a:hover {
 }
 
 
+
+
+.next-project {
+    padding: 0.2rem 1rem;
+    margin: 0.3rem 0rem;
+}
+
+
 @media (min-width: 1500px) {
     body {
         font-size: 1.1vw;
