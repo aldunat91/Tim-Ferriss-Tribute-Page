@@ -1,7 +1,7 @@
 This is a Tim Ferriss Tribute Page.
 It is the first of five Free Code Camp's Responsive Web Design Certification project.
 
-You can see this project live at the following link: https://aldunat91.github.io/Tim-Ferriss-Tribute-Page/
+You can see this project live at the following link: https://josealdunate.github.io/Tim-Ferriss-Tribute-Page/
 
 Hope you like it !
 
